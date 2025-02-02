@@ -63,7 +63,7 @@ body {
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(to right, #601c94, #ff0077);
+    background: linear-gradient(to right, #601c94, #24308a);
     color: #fff;
     border-radius: 8px;
 }
@@ -99,6 +99,14 @@ body {
     margin: 40px 0;
 }
 
+.featured-wigs h2 {
+    color: white;
+}
+
+.featured-wigs h3 {
+    color: white;
+}
+
 .wig-grid {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +116,7 @@ body {
 .wig-item {
     background: #000000;
     margin: 10px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     text-align: center;
     flex: 1 1 calc(30% - 20px);
@@ -125,9 +133,21 @@ body {
     border-radius: 5px;
 }
 
+.wig-item h3 {
+    color: white;
+}
+
+.wig-item p {
+    color: white;
+}
+
 /* Customer Reviews Section */
 .customer-reviews {
     margin: 40px 0;
+}
+
+.customer-reviews h2 {
+    color: white;
 }
 
 .review {
@@ -142,6 +162,10 @@ body {
 /* FAQs Section */
 .faqs {
     margin: 40px 0;
+}
+
+.faqs h2 {
+    color: white;
 }
 
 .faq-item {
@@ -173,6 +197,25 @@ body {
 
 .instagram-images img:hover {
     transform: scale(1.05);
+}
+
+/* About Page */
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.team-member {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 /* Footer Styles */
