@@ -235,6 +235,10 @@ h2, h3, p {
     color: black;
 }
 
+#map {
+    height: 500px; 
+    width: 100%; 
+}
 
 /* Contact Page */
 .main-content {

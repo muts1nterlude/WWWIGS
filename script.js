@@ -1,4 +1,4 @@
-
+// shop page
 let cart = [];
 
 function addToCart(wigName, price) {
@@ -32,19 +32,29 @@ document.querySelectorAll('.btn').forEach(button => {
 });
 
 // contact Page
-function handleFormSubmit(event) {
-    event.preventDefault(); 
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    alert(`Thank you, ${name}! Your message has been sent.\n\nEmail: ${email}\nMessage: ${message}`);
-
-    document.querySelector('form').reset();
+// map
+function initMap() {
+    // The location of the marker (Carrer de Muntaner 184)
+    const location = { lat: 41.3963, lng: 2.1519 };
+    
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15, 
+        center: location, 
+    });
+    
+    const marker = new google.maps.Marker({
+        position: location, 
+        map: map, 
+        title: "Carrer de Muntaner 184" 
+    });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', handleFormSubmit);
-});
+function loadScript() {
+    const script = document.createElement("script");
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyA5CrbUEqgYYNYJCeUm1_8gU3jGpLB1NvI&callback=initMap";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+}
+
+loadScript();

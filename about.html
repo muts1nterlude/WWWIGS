@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V's Wig Store - About</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5CrbUEqgYYNYJCeUm1_8gU3jGpLB1NvI&callback=initMap" async defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -47,15 +48,19 @@
                 <p>Customer Support</p>
             </div>
         </div>
-        <div class="add-info"
-        <h3>Why Choose Us?</h3>
-        <ul>
-            <li>High-quality materials for a natural look and feel.</li>
-            <li>A wide variety of styles, colors, and lengths.</li>
-            <li>Expert advice from our experienced team.</li>
-            <li>Exceptional customer service and support.</li>
-        </ul>
-        </div>
+        
+        <div class="add-info">
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>High-quality materials for a natural look and feel.</li>
+                <li>A wide variety of styles, colors, and lengths.</li>
+                <li>Expert advice from our experienced team.</li>
+                <li>Exceptional customer service and support.</li>
+            </ul>
+        </ div>
+
+        <h3>Our Location</h3>
+        <div id="map"></div>
     </main>
 
     <footer class="site-footer">
@@ -63,5 +68,7 @@
             <p>&copy; 2025 Victoria's Wig Store.</p>
         </div>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
