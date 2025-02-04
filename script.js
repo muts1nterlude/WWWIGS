@@ -69,7 +69,6 @@ function loadScript() {
 loadScript();
 
 // Blog page
-// script.js
 
 function toggleContent(button) {
     const moreContent = button.previousElementSibling; 
