@@ -32,9 +32,18 @@ document.querySelectorAll('.btn').forEach(button => {
 });
 
 // contact Page
+
+function sendMessage(event) {
+    event.preventDefault();
+
+    alert("Your message has been sent!");
+
+    document.getElementById("contact-form").reset();
+}
+
+
 // map
 function initMap() {
-    // The location of the marker (Carrer de Muntaner 184)
     const location = { lat: 41.3963, lng: 2.1519 };
     
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -58,3 +67,17 @@ function loadScript() {
 }
 
 loadScript();
+
+// Blog page
+// script.js
+
+function toggleContent(button) {
+    const moreContent = button.previousElementSibling; 
+    if (moreContent.style.display === "none") {
+        moreContent.style.display = "block"; 
+        button.textContent = "Read Less"; 
+    } else {
+        moreContent.style.display = "none"; 
+        button.textContent = "Read More"; 
+    }
+}
